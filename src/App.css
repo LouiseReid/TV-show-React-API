@@ -1,28 +1,49 @@
-.App {
-  text-align: center;
+.container {
+  height: 100vh;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
+.tvBox {
+  background-image: url('./images/tv.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+article {
+  width: 100px;
+  margin-top: 110px;
+  margin-left: 300px;
+}
+
+
+button {
   height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: black;
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+img {
+  height: 500px;
+}
+.remote {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.App-intro {
-  font-size: large;
+h1 {
+  font-size: 200%;
+  text-align: right;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+h3 {
+  text-align: right;
 }

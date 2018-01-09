@@ -8,11 +8,19 @@ class ShowView extends React.Component {
 
 
     return(
-      <article>
-        <h1>{this.props.show.name}</h1>
-        <img src={this.props.show.image.medium} alt="" height="100"/>
+      <React.Fragment>
+        <article>
+          <img src={this.props.show.image.medium} alt="" height="100"/>
+        </article>
+        <section>
+          <h1>{this.props.show.name}</h1>
+          <h3>{this.props.show.network.name}</h3>
+          <h3>{this.props.show.genres[0]}</h3>
+        </section>
 
-      </article>
+      </React.Fragment>
+
+
     )
   }
 }
