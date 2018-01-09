@@ -4,13 +4,16 @@ class ShowView extends React.Component {
 
 
   render(){
-    console.log(this.props.show);
+    if (!this.props.show) return null;
+
 
     return(
       <article>
         <h1>{this.props.show.name}</h1>
+        <img src={this.props.show.image.medium} alt="" height="100"/>
+
       </article>
-    );
+    )
   }
 }
 
